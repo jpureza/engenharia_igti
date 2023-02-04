@@ -5,14 +5,14 @@ import os
 import progressbar as pb
 
 
-# Função de escrita do arquivo e atualização da progressbar
+# Função de escrita do arquivo e atualização da progressbar 
 def file_write(data):
     file.write(data)
     global pbar
     pbar += len(data)
 
 
-# Baixar os dados contidos no FTP para a pasta zip_dados
+# Baixar os dados contidos no FTP para a pasta zip_dados Dados Rais
 ftp = FTP(host="ftp.mtps.gov.br")
 ftp.login()
 ftp.cwd("/pdet/microdados/RAIS/2020")
